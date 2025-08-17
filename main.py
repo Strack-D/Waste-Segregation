@@ -9,7 +9,7 @@ import io
 app = FastAPI()
 
 # Load Keras model
-model = load_model("./model/waste_model.keras")
+model = load_model("./model/waste_model.h5")
 
 # Waste labels (adjust to match your training order)
 labels = ['plastic', 'paper', 'organic', 'metal', 'glass']
