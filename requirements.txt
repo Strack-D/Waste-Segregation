@@ -3,3 +3,5 @@ uvicorn
 torch
 torchvision
 pillow
+tensorflow
+python-multipart

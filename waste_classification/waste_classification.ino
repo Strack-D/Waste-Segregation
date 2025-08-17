@@ -15,7 +15,6 @@
 // ===========================
 const char *ssid = "Galaxy A52 B192";
 const char *password = "xoxokvng";
-const char *server_ip = "10.172.115.224";
 
 #define IR_SENSOR 19
 #define IN1 39
@@ -197,8 +196,8 @@ void handleWasteDetected() {
     return;
   }
 
-  // POST image to classification endpoint
-  String url = String("http://") + server_ip + ":5000/classify";
+  // POST image to Render classification endpoint
+  String url = "https://waste-segregation-qmhl.onrender.com/classify";
   HTTPClient http;
   http.begin(url);
   http.addHeader("Content-Type", "image/jpeg");
